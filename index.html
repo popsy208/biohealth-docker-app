@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioHealthBuzz-platform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      nav {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 2px solid #667eea;
+      }
+
+      nav a {
+        margin: 0 1.5rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #667eea;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .section {
+        margin: 3rem 0;
+      }
+
+      .section h2 {
+        color: #667eea;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 0.5rem;
+      }
+
+      .articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
+      }
+
+      .article-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .article-img {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+      }
+
+      .article-content {
+        padding: 1.5rem;
+      }
+
+      .article-content h3 {
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .article-content p {
+        color: #666;
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #667eea;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #764ba2;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      footer p {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🧬 BioHealthBuzz</h1>
+      <p>Your source for the latest in biology and health news</p>
+      <p>You are in the right place because Barnabas will be your tutor.</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#articles">Articles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section class="section" id="about">
+        <h2>Welcome to BioHealthBuzz</h2>
+        <p>
+          BioHealthBuzz is your go-to platform for cutting-edge news and
+          insights in the fields of biology, healthcare, and wellness. Stay
+          informed about the latest breakthroughs, research findings, and health
+          trends that are shaping our world.
+        </p>
+      </section>
+
+      <section class="section" id="articles">
+        <h2>Latest Articles</h2>
+        <div class="articles">
+          <div class="article-card">
+            <div class="article-img">🔬</div>
+            <div class="article-content">
+              <h3>Breakthrough in Gene Therapy</h3>
+              <p>
+                Researchers announce a major breakthrough in gene therapy
+                techniques, opening new possibilities for treating genetic
+                disorders.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <div class="article-card">
+            <div class="article-img">🧠</div>
+            <div class="article-content">
+              <h3>Mental Health Awareness</h3>
+              <p>
+                New study reveals the importance of mental health in overall
+                wellness. Experts recommend daily mindfulness practices.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+
+          <div class="article-card">
+            <div class="article-img">💚</div>
+            <div class="article-content">
+              <h3>Heart Health Tips</h3>
+              <p>
+                Learn the top 10 lifestyle changes you can make today to improve
+                your cardiovascular health and longevity.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="contact">
+      <h3>BioHealthBuzz</h3>
+      <p>Email: info@biohealthbuzz.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>&copy; 2026 BioHealthBuzz. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
