@@ -91,10 +91,6 @@ Build the container image using Docker.
 ### 4. Run Container
 Start the application container locally.
 
-### 5. Access Application
-Open your browser and visit:
-http://localhost
-
 ---
 
 ## 📸 Project Architecture
