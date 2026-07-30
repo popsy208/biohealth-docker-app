@@ -7,4 +7,4 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html /usr/share/nginx/html/
 
 # Expose web port
-EXPOSE 80
+EXPOSE 80 

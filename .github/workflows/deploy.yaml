@@ -21,11 +21,11 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz-app:latest .
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz:latest6 .
 
     - name: Push Docker Image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz-app:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz:latest6
 
     - name: Deploy to AWS EC2
       uses: appleboy/ssh-action@v0.1.10
@@ -36,5 +36,5 @@ jobs:
         script: |
           docker stop biohealthbuzz || true
           docker rm biohealthbuzz || true
-          docker pull ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz-app:latest
-          docker run -d -p 80:80 --name biohealthbuzz ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz-app:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz:latest6
+          docker run -d -p 80:80 --name biohealthbuzz ${{ secrets.DOCKER_USERNAME }}/biohealthbuzz:latest6
